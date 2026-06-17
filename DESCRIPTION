@@ -1,0 +1,36 @@
+Package: listsr
+Title: Find Pattern in the Lists You Already Collect
+Version: 0.1.0
+Authors@R: c(
+    person("K. W.", "Bridges", email = "kim.bridges@gmail.com", role = c("aut", "cre")),
+    person("Claude (Anthropic)", role = "aut"))
+Description: A small toolkit for turning the ragged, everyday lists people
+    already keep (sites, and the items found at each) into reproducible groups.
+    It reads ragged list text into a binary two-way table, scans frequencies,
+    measures Jaccard dissimilarity, draws dendrograms (optionally coloured by
+    external metadata), and cuts a tree into groups by the "most variable site
+    sets the line" assessment-line rule. It is the companion engine to the
+    'lists' document and shares lineage with the 'coenosr' package, which reads
+    Braun-Blanquet releve files.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1.0)
+Imports:
+    dplyr,
+    forcats,
+    ggdendro,
+    ggplot2,
+    rlang,
+    stats,
+    tibble,
+    tidyr,
+    tidyselect,
+    utils
+Suggests:
+    gt,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
